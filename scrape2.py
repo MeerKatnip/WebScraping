@@ -7,4 +7,8 @@ week = soup.find(id='seven-day-forecast-body')
 # print(week)
 
 items = week.find_all(class_ = 'tombstone-container')
-print(items[0])
+# print(items[0])
+
+print(items[0].find(class_ = 'period-name').get_text())
+print(items[0].find(class_ = 'short-desc').get_text())
+print(items[0].find(class_ = 'temp').get_text())
