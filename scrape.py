@@ -12,12 +12,17 @@ for article in soup.find_all('article'):
     summary = article.find('div', class_='entry-content').p.text
     print(summary)
 
-    vid_src = article.find('iframe', class_='youtube-player')['src']
+    
 
-    vid_id = vid_src.split('/')[4]
-    vid_id = vid_id.split('?')[0]
+    try:
+        vid_src = article.find('iframe', class_='youtube-player')['src']
 
-    yt_link = f'https://youtube.com/watch?v={vid_id}'
+        vid_id = vid_src.split('/')[4]
+        vid_id = vid_id.split('?')[0]
+
+        yt_link = f'https://youtube.com/watch?v={vid_id}'
+    except Exception as e:
+        yt_link = None
+
     print(yt_link)
-
     print()
