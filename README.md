@@ -7,6 +7,6 @@ Followed tutorial here: https://www.youtube.com/watch?v=ng2o98k983k
 
 Exercise 2:
 
-Accessed forecast.weather.gov, located div class 'tombstone-container', extracted elements for classes 'period-name', 'short-desc', and 'temp. Created new variable for array of element items extracted from each class. Printing data with pandas in a table format.
+Accessed forecast.weather.gov, located div class 'tombstone-container', extracted elements for classes 'period-name', 'short-desc', and 'temp. Created new variable for array of element items extracted from each class. Printing data with pandas in a table format. Exported to .csv file with pandas.
 
 Followed tutorial here: https://www.youtube.com/watch?v=E5cSNSeBhjw
